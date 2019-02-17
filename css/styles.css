@@ -1,3 +1,4 @@
+
 /*p {
   background-color: green;
 }
@@ -12,23 +13,22 @@ p.slow .stop {
 body {
   font-family: cursive;
   background-image: url("img2.jpg");
-  /*background-position: center;
-  background-size: cover;*/
-
-
 }
 
-.jumbotron {
+h1 {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.col-lg-12 {
+  height: 225px;
   background-image: url("img5.png");
-  background-position: center;
   background-size: cover;
-  text-align: center;
-  color: white
-  
+  background-position: center;
 }
 
 .header {
-  background-color: #1f3251;
+  background-image: linear-gradient(to right, #242E63, #E06072);
   color: White;
 }
 
@@ -39,11 +39,11 @@ body {
   margin-right: auto;
   border: 10px solid black;
   padding: 50px;
-  background-color: #3f1d31;
+  background-color: #485C8E;
 }
 
 .footer {
-  background-color: #1f3251;
+  background-image: linear-gradient(to right, #E06072, #242E63);
   color: White;
   text-align: center;
 }
@@ -65,5 +65,9 @@ body {
 .row {
   color: white;
   text-align: center;
-  padding-top: 50px
+  padding-top: 50px;
+}
+
+.col-sm-4 {
+  font-weight:bold;
 }
