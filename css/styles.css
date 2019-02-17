@@ -11,8 +11,8 @@ p.slow .stop {
   background-color: red;
 }*/
 body {
-  font-family: cursive;
   background-image: url("img2.jpg");
+  font-family: 'Arima Madurai', cursive;
 }
 
 h1 {
@@ -20,16 +20,28 @@ h1 {
   font-size: 40px;
 }
 
+.pad {
+  padding-top: 100px;
+  text-align: left
+
+}
+
 .col-lg-12 {
   height: 225px;
   background-image: url("img5.png");
   background-size: cover;
   background-position: center;
+  font-family: 'Coiny', cursive;
+  text-align: center;
 }
 
 .header {
   background-image: linear-gradient(to right, #242E63, #E06072);
   color: White;
+  font-family: 'Coiny', cursive;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 3px;
 }
 
 .container {
@@ -52,20 +64,19 @@ h1 {
   background-color: gray;
   border-style: solid;
   border-width: 40px;
-}
-
-.col-md-8 {
   background-color: black;
 }
 
+img {
+  height: 250px;
+}
 .Image {
-  text-align: center;
+  padding-top: 20px;
 }
 
 .row {
   color: white;
   text-align: center;
-  padding-top: 50px;
 }
 
 .col-sm-4 {
