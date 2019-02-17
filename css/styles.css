@@ -1,15 +1,3 @@
-
-/*p {
-  background-color: green;
-}
-
-p.slow {
-  background-color: yellow;
-}
-
-p.slow .stop {
-  background-color: red;
-}*/
 body {
   background-image: url("img2.jpg");
   font-family: 'Arima Madurai', cursive;
@@ -123,3 +111,10 @@ li {
     height: auto;
   }
 }
+
+.clickable {
+  cursor: pointer;
+  color: #0088cc;
+}
+.clickable:hover {
+  text-decoration: underline;
