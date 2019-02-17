@@ -30,6 +30,7 @@ h3 {
 h5
 {
   text-align: center;
+  padding-top: 15px;
 }
 .pad {
   padding-top: 100px;
@@ -49,6 +50,7 @@ h5
 .col-sm-12{
   background-color: #E06072;
   margin: 10px;
+  background
 }
 
 .header {
@@ -113,4 +115,11 @@ li {
 
 .roadtrip {
   display: none;
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
 }

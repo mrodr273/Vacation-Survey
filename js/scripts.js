@@ -3,6 +3,7 @@ $(document).ready(function() {
   $('img#tropical').click(function() {
     alert("Great choice!")
     $(".tropical").show();
+    window.location = 'Vacation-Website.html#jumpHere';
     $("form").submit(function(event) {
       event.preventDefault();
       var Q1value = parseInt($("input:radio[name=Q1]:checked").val());
