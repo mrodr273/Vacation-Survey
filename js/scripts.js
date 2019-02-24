@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  alert("hello")
 
   $('img#tropical').click(function() {
     alert("Great choice!")
@@ -8,6 +7,7 @@ $(document).ready(function() {
 
     $("form").submit(function(event) {
       event.preventDefault();
+      window.location = 'Vacation-Website.html#result-tropical';
       var Q1value = $("input:radio[name=Q1]:checked").val();
       var Q2value = $("input:radio[name=Q2]:checked").val();
       var Q3value = $("input:radio[name=Q3]:checked").val();
@@ -15,15 +15,14 @@ $(document).ready(function() {
       var Q5value = $("input:radio[name=Q5]:checked").val();
       var Cuba = 0;
       var Cook = 0;
-      var CookCuba = 0;
       var Greece = 0;
       var Maldives = 0;
 
 
       if (Q1value === "Cuba") {
       Cuba += 1;
-    } else if (Q1value === "CookCuba") {
-      CookCuba += 1;
+    } else if (Q1value === "Cook") {
+      Cook += 1;
     } else if (Q1value === "Greece") {
       Greece += 1;
     } else if (Q1value === "Maldives") {
@@ -32,8 +31,8 @@ $(document).ready(function() {
 
     if (Q2value === "Cuba") {
     Cuba += 1;
-    } else if (Q2value === "CookCuba") {
-      CookCuba += 1;
+    } else if (Q2value === "Cook") {
+      Cook += 1;
     } else if (Q2value === "Greece") {
       Greece += 1;
     } else if (Q2value === "Maldives") {
@@ -52,9 +51,8 @@ $(document).ready(function() {
 
     if (Q4value === "Cuba") {
     Cuba += 1;
-  } else if (Q4value === "CookCuba") {
+  } else if (Q4value === "Cook") {
       Cook += 1;
-      Cuba += 1;
     } else if (Q4value === "Greece") {
       Greece += 1;
     } else if (Q4value === "Maldives") {
@@ -63,25 +61,27 @@ $(document).ready(function() {
 
     if (Q5value === "Cuba") {
     Cuba += 1;
-    } else if (Q5value === "CookCuba") {
-      CookCuba += 1;
+    } else if (Q5value === "Cook") {
+      Cook += 1;
     } else if (Q5value === "Greece") {
       Greece += 1;
     } else if (Q5value === "Maldives") {
     Maldives += 1;
     }
 
-    alert("Cuba is"+Cuba+" Greece is"+ Greece)
-
     var highest = Math.max(Cuba, Cook, Greece, Maldives);
     if (highest === Cuba) {
       alert("Go to Cuba")
+      $('img#cuba').show();
     } else if (highest === Cook) {
       alert("Go to Cook")
+      $('img#cook').show();
     } else if (highest === Maldives) {
       alert("Go to Maldives")
+      $('img#maldives').show();
     } else if (highest === Greece) {
-      alert("Go to Maldives")
+      alert("Go to Greece")
+      $('img#greece').show();
     }
 
     });
@@ -160,12 +160,16 @@ $(document).ready(function() {
 
     if (highest === Yellowstone) {
       alert("Go to Yellowstone")
+      $('img#yellowstone').show();
     } else if (highest === LakeTahoe) {
       alert("Go to LakeTahoe")
+      $('img#laketahoe').show();
     } else if (highest === Canyon) {
       alert("Go to Canyon")
+      $('img#canyon').show();
     } else if (highest === Yosemite) {
       alert("Go to Yosemite")
+      $('img#yosemite').show();
     }
 
     });
@@ -237,7 +241,7 @@ $(document).ready(function() {
     Columbia += 1;
     } else if (roadQ5value === "Route66") {
     Route66 += 1;
-  } else if (roadQ5value === "Ocean") {
+    } else if (roadQ5value === "Ocean") {
     Ocean += 1;
     }
 
@@ -245,12 +249,16 @@ $(document).ready(function() {
 
     if (highest === PacificHwy) {
       alert("Go to PacificHwy")
+      $('img#pacifichwy').show();
     } else if (highest === Columbia) {
       alert("Go to Columbia")
+      $('img#columbia').show();
     } else if (highest === Route66) {
       alert("Go to Route66")
+      $('img#route66').show();
     } else if (highest === Ocean) {
-      alert("Go to ocean")
+      alert("Go to Overseas Highway")
+      $('img#ocean').show();
     }
     });
   });

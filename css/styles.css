@@ -96,6 +96,57 @@ li {
   display: none;
 }
 
+#cuba {
+  display: none;
+  height: 500px;
+}
+#maldives {
+  display: none;
+  height: 500px;
+}
+#greece {
+  display: none;
+  height: 500px;
+}
+#cook {
+  display: none;
+  height: 500px;
+}
+
+#canyon {
+  display: none;
+  height: 500px;
+}
+#yellowstone {
+  display: none;
+  height: 500px;
+}
+#yosemite {
+  display: none;
+  height: 500px;
+}
+#laketahoe {
+  display: none;
+  height: 500px;
+}
+
+#ocean {
+  display: none;
+  height: 500px;
+}
+#pacifichwy {
+  display: none;
+  height: 500px;
+}
+#route66 {
+  display: none;
+  height: 500px;
+}
+#columbia {
+  display: none;
+  height: 500px;
+}
+
 .outdoors {
   display: none;
 }
