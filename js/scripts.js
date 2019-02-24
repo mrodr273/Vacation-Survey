@@ -72,16 +72,16 @@ $(document).ready(function() {
     var highest = Math.max(Cuba, Cook, Greece, Maldives);
     if (highest === Cuba) {
       alert("Go to Cuba")
-      $('img#cuba').show();
+      $(".cuba").show();
     } else if (highest === Cook) {
       alert("Go to Cook")
-      $('img#cook').show();
+      $(".cook").show();
     } else if (highest === Maldives) {
       alert("Go to Maldives")
-      $('img#maldives').show();
+      $(".maldives").show();
     } else if (highest === Greece) {
       alert("Go to Greece")
-      $('img#greece').show();
+      $(".greece").show();
     }
 
     });
@@ -160,16 +160,16 @@ $(document).ready(function() {
 
     if (highest === Yellowstone) {
       alert("Go to Yellowstone")
-      $('img#yellowstone').show();
+      $(".yellowstone").show();
     } else if (highest === LakeTahoe) {
-      alert("Go to LakeTahoe")
-      $('img#laketahoe').show();
+      alert("Go to Lake Tahoe")
+      $(".laketahoe").show();
     } else if (highest === Canyon) {
-      alert("Go to Canyon")
-      $('img#canyon').show();
+      alert("Go to the Grand Canyon")
+      $(".canyon").show();
     } else if (highest === Yosemite) {
       alert("Go to Yosemite")
-      $('img#yosemite').show();
+      $(".yosemite").show();
     }
 
     });
@@ -178,10 +178,10 @@ $(document).ready(function() {
   $('img#roadtrip').click(function() {
     alert("Let's do it!")
     $(".roadtrip").show();
-    window.location = 'Vacation-Website.html#jumpHere3';
 
     $("form").submit(function(event) {
       event.preventDefault();
+      window.location = 'Vacation-Website.html#jumpHere3';
       var roadQ1value = $("input:radio[name=roadQ1]:checked").val();
       var roadQ2value = $("input:radio[name=roadQ2]:checked").val();
       var roadQ3value = $("input:radio[name=roadQ3]:checked").val();
@@ -249,16 +249,16 @@ $(document).ready(function() {
 
     if (highest === PacificHwy) {
       alert("Go to PacificHwy")
-      $('img#pacifichwy').show();
+      $(".pacifichwy").show();
     } else if (highest === Columbia) {
       alert("Go to Columbia")
-      $('img#columbia').show();
+      $(".columbia").show();
     } else if (highest === Route66) {
       alert("Go to Route66")
-      $('img#route66').show();
+      $(".route66").show();
     } else if (highest === Ocean) {
       alert("Go to Overseas Highway")
-      $('img#ocean').show();
+      $(".ocean").show();
     }
     });
   });

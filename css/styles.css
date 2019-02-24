@@ -96,54 +96,76 @@ li {
   display: none;
 }
 
-#cuba {
+.cuba {
   display: none;
+}
+#cuba {
   height: 500px;
+}
+.maldives{
+  display: none;
 }
 #maldives {
-  display: none;
   height: 500px;
+}
+.greece {
+  display: none;
 }
 #greece {
-  display: none;
   height: 500px;
+}
+.cook {
+  display: none;
 }
 #cook {
-  display: none;
   height: 500px;
 }
-
-#canyon {
+.canyon {
   display: none;
+}
+#canyon {
   height: 500px;
+}
+.yellowstone {
+  display: none;
 }
 #yellowstone {
-  display: none;
   height: 500px;
+}
+.yosemite {
+  display: none;
 }
 #yosemite {
-  display: none;
   height: 500px;
+}
+.laketahoe {
+  display: none;
 }
 #laketahoe {
-  display: none;
   height: 500px;
 }
-
-#ocean {
+.ocean {
   display: none;
+}
+#ocean {
   height: 500px;
+}
+.pacifichwy {
+  display: none;
 }
 #pacifichwy {
-  display: none;
   height: 500px;
+}
+.route66 {
+  display: none;
 }
 #route66 {
-  display: none;
   height: 500px;
 }
-#columbia {
+.columbia {
   display: none;
+}
+#columbia {
   height: 500px;
 }
 
