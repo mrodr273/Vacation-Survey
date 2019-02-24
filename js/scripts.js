@@ -157,7 +157,7 @@ $(document).ready(function() {
 
 
     var highest = Math.max(Yellowstone, LakeTahoe, Canyon, Yosemite);
-    alert("LakeTahoe is " + LakeTahoe + " Yellowstone is"+ Yellowstone + " Canyon is" + Canyon + " Yosemite is"+ Yosemite)
+
     if (highest === Yellowstone) {
       alert("Go to Yellowstone")
     } else if (highest === LakeTahoe) {
@@ -171,15 +171,87 @@ $(document).ready(function() {
     });
   });
 
-  /*$('img#outdoors').click(function() {
-    alert("Ready for a new adventure?")
-    $(".outdoors").show();
-  });
-
   $('img#roadtrip').click(function() {
     alert("Let's do it!")
     $(".roadtrip").show();
-  });*/
+    window.location = 'Vacation-Website.html#jumpHere3';
+
+    $("form").submit(function(event) {
+      event.preventDefault();
+      var roadQ1value = $("input:radio[name=roadQ1]:checked").val();
+      var roadQ2value = $("input:radio[name=roadQ2]:checked").val();
+      var roadQ3value = $("input:radio[name=roadQ3]:checked").val();
+      var roadQ4value = $("input:radio[name=roadQ4]:checked").val();
+      var roadQ5value = $("input:radio[name=roadQ5]:checked").val();
+
+
+      var PacificHwy = 0;
+      var Columbia = 0;
+      var Route66 = 0;
+      var Ocean = 0;
+
+
+      if (roadQ1value === "PacificHwy") {
+      PacificHwy += 1;
+    } else if (roadQ1value === "Columbia") {
+      Columbia += 1;
+    } else if (roadQ1value === "Route66") {
+      Route66 += 1;
+    } else if (roadQ1value === "Ocean") {
+      Ocean += 1;
+    }
+
+    if (roadQ2value === "PacificHwy") {
+    PacificHwy += 1;
+    } else if (roadQ2value === "Columbia") {
+      Columbia += 1;
+    } else if (raodQ2value === "Route66") {
+      Route66 += 1;
+    } else if (roadQ2value === "Ocean") {
+    Ocean += 1;
+    }
+
+    if (roadQ3value === "PacificHwy") {
+    PacificHwy += 1;
+    } else if (roadQ3value === "Columbia") {
+    Columbia += 1;
+    } else if (roadQ3value === "Route66") {
+    Canyon += 1;
+    } else if (roadrQ3value === "Ocean") {
+    Ocean += 1;
+    }
+
+    if (roadQ4value === "PacificHwy") {
+    PacificHwy += 1;
+    } else if (roadQ4value === "Columbia") {
+    Columbia += 1;
+    } else if (roadQ4value === "Route66") {
+    Route66 += 1;
+    } else if (roadQ4value === "Ocean") {
+    Ocean += 1;
+    }
+
+    if (roadQ5value === "PacificHwy") {
+    PacificHwy += 1;
+    } else if (roadQ5value === "Columbia") {
+    Columbia += 1;
+    } else if (roadQ5value === "Route66") {
+    Route66 += 1;
+  } else if (roadQ5value === "Ocean") {
+    Ocean += 1;
+    }
+
+    var highest = Math.max(PacificHwy, Columbia, Route66, Ocean);
+
+    if (highest === PacificHwy) {
+      alert("Go to PacificHwy")
+    } else if (highest === Columbia) {
+      alert("Go to Columbia")
+    } else if (highest === Route66) {
+      alert("Go to Route66")
+    } else if (highest === Ocean) {
+      alert("Go to ocean")
+    }
+    });
+  });
 });
-/*var number1 = parseInt(prompt("Enter a number:"));
-var number2 = parseInt(prompt("Enter another number:"));*/
